@@ -13,7 +13,7 @@ This repository includes:
 - An Isaac Lab environment and configuration example (`env.py`, `env_cfg.py`)
 - A runnable test/visualization script (`run.py`) showing end-to-end usage
 
-## What This Repository Is For
+## 🚀 What This Repository Is For
 
 The main goal is to make `tacmap_sensor` easy to plug into Isaac Lab, then provide a practical reference for:
 
@@ -22,7 +22,7 @@ The main goal is to make `tacmap_sensor` easy to plug into Isaac Lab, then provi
 - How to visualize TacMap deformation/contact outputs
 - How to save simulated tactile test data
 
-## Key Files
+## 📥 Key Files
 
 - `tacmap_sensor/sharpa_tacmap_vbts.py`: TacMap sensor runtime implementation.
 - `tacmap_sensor/sharpa_tacmap_cfg.py`: TacMap sensor config class.
@@ -31,7 +31,7 @@ The main goal is to make `tacmap_sensor` easy to plug into Isaac Lab, then provi
 - `tactile_align_wrapper.py`: Visualization/update wrapper plus data saving logic.
 - `run.py`: Main script to launch simulation, load test case, and execute pressing.
 
-## Running the Example
+## ▶️ Running the Example
 
 Run from the repository root:
 
@@ -46,7 +46,7 @@ Common options:
 - `--save_exit`: Save one full test round and exit automatically.
 - `--num_envs`, `--seed`: Standard simulation controls.
 
-## How `press_info` Selects a Shape/Test Case
+## 📌 How `press_info` Selects a Shape/Test Case
 
 Each JSON file in `assets/test_case/` defines one pressing scenario.  
 Example fields:
@@ -59,7 +59,7 @@ Example fields:
 
 By changing `--press_info`, you switch to a different shape or pressing sequence.
 
-## Visualization and Testing
+## 🔄 Visualization and Testing
 
 During simulation, the wrapper can visualize:
 
@@ -69,7 +69,7 @@ During simulation, the wrapper can visualize:
 
 This makes it easy to inspect whether the sensor response matches the expected contact behavior for each test object.
 
-## Saving Test Data with `save_exit`
+## 📖 Saving Test Data with `save_exit`
 
 When `--save_exit` is enabled, the script finishes one complete pressing round, saves outputs, then exits.
 
@@ -85,7 +85,7 @@ Output directory pattern:
 
 where `<press_info_name>` is derived from the JSON filename used in `--press_info`.
 
-## Typical Workflow
+## 🗒️ Typical Workflow
 
 1. Pick a test case JSON in `assets/test_case/`.
 2. Run `run.py` with that file via `--press_info`.
